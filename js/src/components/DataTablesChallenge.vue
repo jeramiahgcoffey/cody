@@ -41,11 +41,11 @@ export default {
         value: 'id'
       },
       {
-        text: 'Last',
+        text: 'Last Name',
         value: 'lastName'
       },
       {
-        text: 'First',
+        text: 'First Name',
         value: 'firstName'
       },
       {
@@ -91,3 +91,10 @@ export default {
   }
 };
 </script>
+
+<style>
+/* Keep table headers aligned horizontally */
+.v-data-table-header th {
+  white-space: nowrap;
+}
+</style>
