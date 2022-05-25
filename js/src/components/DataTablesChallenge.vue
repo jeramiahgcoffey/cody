@@ -12,15 +12,15 @@
         :items="allLoanApplications"
       >
         <!-- Format date fields to relative before rendering -->
-        <template v-slot:item.lastNoteByCurrentUser="{ item }">
+        <template v-slot:[`item.lastNoteByCurrentUser`]="{ item }">
           {{ formatDate(item.lastNoteByCurrentUser) }}
         </template>
 
-        <template v-slot:item.timeInStatus="{ item }">
+        <template v-slot:[`item.timeInStatus`]="{ item }">
           {{ formatDate(item.timeInStatus) }}
         </template>
 
-        <template v-slot:item.updatedAt="{ item }">
+        <template v-slot:[`item.updatedAt`]="{ item }">
           {{ formatDate(item.updatedAt) }}
         </template>
       </v-data-table>
